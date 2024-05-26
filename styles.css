@@ -1,0 +1,44 @@
+/* Include matrix font */
+@font-face {
+    font-family: 'MatrixMZ4P';
+    src: url('fonts/Matrix-MZ4P.ttf') format('truetype');
+}
+
+/* Set a terminal-style font for the rest of the text */
+body, p, a, span, div, button {
+    font-family: 'Courier New', 'Lucida Console', monospace; /* Terminal-style font */
+}
+
+/* Apply Matrix font to headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'MatrixMZ4P', monospace; /* Matrix font for headers */
+}
+
+/* Set background to Matrix wallpaper and stretch it */
+body {
+    background-image: url('assets/matrix.png');
+    background-size: cover; /* Stretch the image to cover the whole screen */
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+    background-attachment: fixed; /* Ensure background image stays fixed */
+    color: #00FF00; /* Matrix green color for text */
+}
+
+/* Customize buttons */
+button {
+    background-color: #000000; /* Black background */
+    color: #00FF00; /* Matrix green text */
+    border: 1px solid #00FF00; /* Green border */
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-family: 'Courier New', 'Lucida Console', monospace; /* Ensure terminal-style font for buttons */
+}
+
+/* Customize focus and hover states */
+button:focus, button:hover {
+    background-color: #00FF00; /* Green background on hover/focus */
+    color: #000000; /* Black text on hover/focus */
+}
+
+/* TODO> Customize other UI elements */
